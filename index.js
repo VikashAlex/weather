@@ -1,7 +1,6 @@
 const apiKey = "4f74ebf2feec6632d4058ce309e0e10a";
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-
 let inputBox = document.getElementById("inputBox")
 let searchBtn = document.getElementById("searchBtn")
 let card = document.querySelector(".card")
@@ -34,7 +33,6 @@ const ShowData = (show) => {
 
 
 }
-
 const getInput = async () => {
     if (inputBox.value != previousValue) {
         const cityName = inputBox.value;
@@ -62,14 +60,7 @@ const getInput = async () => {
     else {
         inputBox.value = ""
     }
-
-
-
-
 }
-
-
-
 inputBox.addEventListener("keyup",
     function (e) {
         if (e.code == "Enter") {
