@@ -18,6 +18,7 @@
     text-align: center;
     position: relative;
     transition: all .3s linear;
+   
 }
 .inc-height{
     height: 600px;
@@ -31,6 +32,7 @@
 }
 
 .search input{
+    width: 100%;
     border: 0;
     outline: 0;
     background: #ebfffc;
@@ -38,9 +40,13 @@
     padding: 10px 25px;
     height: 50px;
     border-radius: 30px;
-    flex: 1;
     margin-right: 16px;
     font-size: 18px;
+}
+@media(max-width:375px){
+    .search input{
+        font-size: 12px;
+    }
 }
 
 #searchBtn{
